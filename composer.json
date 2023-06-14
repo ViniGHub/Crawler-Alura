@@ -46,5 +46,6 @@
     "scripts-descriptions": {
         "check": "Roda as verificações do codigo. Tanto de padrões de codigo quanto de regras do proprio PHP.",
         "fix": "Corrige os erros de codigo com base na PSR4."
-    }
+    },
+    "license": "GPL-3.0"
 }
