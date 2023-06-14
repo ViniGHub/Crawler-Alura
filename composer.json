@@ -1,5 +1,5 @@
 {
-    "name": "vinighub/buscador-cursos",
+    "name": "vinighub/buscador-texto-http",
     "description": "Projeto que exibe dados do site da Alura.",
     "type": "library",
     "autoload": {
