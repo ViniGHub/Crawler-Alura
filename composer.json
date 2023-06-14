@@ -31,15 +31,20 @@
         "phan/phan": "^5.4"
     },
     "scripts": {
-        "phpcs": "vendor/bin/phpcs --standard=PSR12 src/",
-        "phpcbf": "vendor/bin/phpcbf --standard=PSR12 src/",
+        "phpcs": "phpcs --standard=PSR12 src/buscador.php",
+        "phpcbf": "phpcbf --standard=PSR12 src/buscador.php",
         "phan": "vendor/bin/phan --allow-polyfill-parser src/buscador.php",
         "check": [
             "@phpcs",
             "@phan"
+        ],
+        "fix": [
+            "phpcbf",
+            "phpcs"
         ]
     },
     "scripts-descriptions": {
-        "check": "Roda as verificações do codigo. Tanto de padrões de codigo quanto de regras do proprio PHP."
+        "check": "Roda as verificações do codigo. Tanto de padrões de codigo quanto de regras do proprio PHP.",
+        "fix": "Corrige os erros de codigo com base na PSR4."
     }
 }
